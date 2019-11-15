@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 class Server {
     constructor() {
-        this.port = Number(process.env.PORT) || 5000;
+        this.port = Number(process.env.PORT) || 3000;
         this.app = express_1.default();
     }
     start(callback) {
