@@ -22,7 +22,7 @@ server.app.use(cors_1.default({ origin: true, credentials: true }));
 server.app.use('/user', user_1.default);
 server.app.use('/posts', post_1.default);
 //mongo db connection
-mongoose_1.default.connect('mongodb+srv://jesusmesa14:jesusxd21@cluster0-h1ffh.mongodb.net/puppy?retryWrites=true&w=majority', {
+mongoose_1.default.connect('mongodb://localhost:27017/api', {
     useNewUrlParser: true,
     useCreateIndex: true
 }, (err) => {
